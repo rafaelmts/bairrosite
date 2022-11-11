@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+.login #main-login{
+    width: 100vw;
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login #left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login #left-login > h1{
+    color: #00ff6a;
+}
+.login #right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login #card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #041d02;
+    border-radius: 50px;
+    box-shadow: 0px 10px 40px #041d02;
+}
+.login #card-login > h1{
+    color: #00ff6a;
+    font-weight: 800;
+    margin: 0;
+}
+.login #textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    color: white;
+}
+.login #textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    background: #052902;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #041d02;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+.login #textfield > input:hover{
+    background: #0d4d09;
+}
+.login #textfield > label{
+    color: white;
+    margin-bottom: 10px;
+}
+.login #outros{
+    font-size: 10pt;
+    color: white;
+}
+.login #outros a{
+    text-decoration: none;
+    color: #00ff6a;
+}
+.login #textfield > input::placeholder{
+    color: white;
+}
+.login input{
+    color: #cfcfcf;
+}
+.login #botao-login{
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 800;
+    color: #0e0101;
+    transition: all 0.4s;
+}
+.login #botao-login a{
+    color: #0e0101;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.login #botao-login:hover{
+    background-color: #00ff6a;
+}
+.login #botao-login a:hover{
+    color: white;
+}
+.header{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.header #titulo{
+    font-size: 50px;
+    padding: 15px;    
+}
+.header #titulo a{  
+    color: white;
+    text-decoration: none;
+}
+.header #subtitulo{
+    color: white;
+    font-size: 15px;
+}
+.menu{
+    background-color: #0d4d09;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.menu ul{
+    max-width: 1000px;
+    list-style: none;
+    padding: 0;
+    background-color: #0d4d09;
+    position: relative;
+    left: 75px;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.menu ul li a:hover{
+    background-color: #00ff6a;
+}
+.menu ul li #conta{
+    background-color: #0196b1;
+    padding: 15px;
+    border-radius: 50px;
+    position: relative;
+    left: 350px;
+}
+.menu ul li #conta:hover{
+    background-color: #07daff;
+    color: white;
+    position: relative;
+    left: 350px;
+}
+.conteudo #sobre{
+    background-color: #041d02;
+    display: flex;
+}
+.conteudo #sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #sobre #texto{
+    color: white;
+    padding: 25px 75px;
+}
+.conteudo #sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo a{
+    text-decoration: none;
+    color: #00ff6a;
+}
+.conteudo #localizacao{
+    display: flex;
+}
+.conteudo #localizacao #mapa{
+    padding: 25px 0px;
+    margin: 20px;
+    border-radius: 50px;
+}
+.conteudo #localizacao #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #localizacao #texto h1{
+    color: #00ff6a;
+}
+.conteudo #ajude-nos{
+    display: flex;
+    background-color: #00ff6a;
+}
+.conteudo #ajude-nos #imagem{
+    padding: 25px 0px;
+    margin: 0px 50px;
+    border-radius: 50px;
+}
+.conteudo #ajude-nos #texto{
+    color: white;
+    padding: 25px 75px;
+}
+.conteudo #ajude-nos #texto h1{
+    color: #041d02;
+}
+.conteudo #ajude-nos #lista{
+    padding: 10px 20px;
+}
+.conteudo #ajude-nos a{
+    padding: 16px 100px;
+    background-color: #052902;
+    width: 1000px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.4s;
+}
+.conteudo #ajude-nos #lista #item-lista{
+    padding: 2px 0px;
+}
+.conteudo #ajude-nos a:hover{
+    padding: 16px 200px;
+    background-color: #0d4d09;
+    color: #00ff6a;
+} 
+.conteudo #comecando-historia{
+    background-color: #041d02;
+    display: flex;
+}
+.conteudo #comecando-historia #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #comecando-historia #texto{
+    color: white;
+    padding: 25px 75px;
+}
+.conteudo #comecando-historia #texto h1{
+    color: #00ff6a;
+}
+.conteudo #comecando-historia #texto b{
+    color: #00ff6a;
+}
+.conteudo #historia-1{
+    display: flex;
+}
+.conteudo #historia-1 #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #historia-1 #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #historia-1 #texto h1{
+    color: #00ff6a;
+}
+.conteudo #historia-1 #texto b{
+    color: #00ff6a;
+}
+.conteudo #historia-2{
+    background-color: #cfcfcf;
+    display: flex;
+}
+.conteudo #historia-2 #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #historia-2 #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #historia-2 #texto h1{
+    color: #00ff6a;
+}
+.conteudo #historia-2 #texto b{
+    color: #00ff6a;
+}
+.conteudo #historia-final{
+    display: flex;
+}
+.conteudo #historia-final #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #historia-final #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #historia-final #texto h1{
+    color: #00ff6a;
+}
+.conteudo #historia-final #texto b{
+    color: #00ff6a;
+}
+.conteudo #pontos-turisticos{
+    display: flex;
+}
+.conteudo #pontos-turisticos #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #pontos-turisticos #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #pontos-turisticos #texto h1{
+    color: #00ff6a;
+}
+.conteudo #pontos-turisticos #texto b{
+    color: #00ff6a;
+}
+.conteudo #pontos-turisticos #texto ul li{
+    color: white;
+    padding: 10px;
+    margin: 20px 0px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.conteudo #pontos-turisticos ul li a{
+    background-color: #052902;
+    padding: 16px 100px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.conteudo #pontos-turisticos ul li a:hover{
+    background-color: #0d4d09;
+    padding: 16px 200px;
+    color: #00ff6a;
+}
+.conteudo #pedj-sobre{
+    display: flex;
+    background-color: #cfcfcf;
+}
+.conteudo #pedj-sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #pedj-sobre #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #pedj-sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #pedj-sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo #pdj-sobre{
+    display: flex;
+}
+.conteudo #pdj-sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #pdj-sobre #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #pdj-sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #pdj-sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo #tpz-sobre{
+    display: flex;
+    background-color: #cfcfcf;
+}
+.conteudo #tpz-sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #tpz-sobre #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #tpz-sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #tpz-sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo #ppa-sobre{
+    display: flex;
+}
+.conteudo #ppa-sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #ppa-sobre #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #ppa-sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #ppa-sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo #cns-sobre{
+    background-color: #cfcfcf;
+    display: flex;
+}
+.conteudo #cns-sobre #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #cns-sobre #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #cns-sobre #texto h1{
+    color: #00ff6a;
+}
+.conteudo #cns-sobre #texto b{
+    color: #00ff6a;
+}
+.conteudo #informacoes{
+    background-color: #cfcfcf;
+    display: flex;
+}
+.conteudo #informacoes #imagem{
+    padding: 25px 0px;
+    margin: 20px;
+}
+.conteudo #informacoes #texto{
+    color: #0e0101;
+    padding: 25px 75px;
+}
+.conteudo #informacoes #texto h1{
+    color: #00ff6a;
+}
+.conteudo #informacoes #texto b{
+    color: #00ff6a;
+}
+.rodape{
+    background-color: #052902;
+    display: flex;
+}
+.rodape h3{
+    color: #00ff6a;
+}
+.rodape #redes #icones{
+    display: flex;
+}
+.rodape #redes img{
+    padding: 3px;
+    }
+.rodape #redes{
+    padding: 20px 200px;
+}
+.rodape #contato{
+    color: white;
+    padding: 20px 200px;
+}
+@media only screen and (max-width: 950px){
+    *{
+        width: 65%;
+    }
+}
